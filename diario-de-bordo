@@ -1,0 +1,40 @@
+1.1.a
+
+nmap -sn $REDE_INTERNA/MASK
+
+1.1.b
+
+telnet $HOST_DEBIAN 21
+
+1.1.c
+
+nmap -A $HOST_DEBIAN
+
+1.1.d
+
+https://github.com/ViniGl/port-scan.git
+
+1.1.e
+
+python gui.py 
+
+	Inserir $HOST_DEBIAN; portas 1:1000
+
+Output:
+
+--------------------------------------------------
+ Scanning host 192.168.50.235
+--------------------------------------------------
+
+Port 21(ftp): is open
+Port 22(ssh): is open
+Port 80(http): is open
+Port 111(sunrpc): is open
+Port 139(netbios-ssn): is open
+Port 445(microsoft-ds): is open
+
+--------------------------------------------------
+Scan process has finished
+--------------------------------------------------
+
+
